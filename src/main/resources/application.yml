@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: weatherSong
+  redis:
+    host: redis
+    port: 6379
+server:
+  port: 12001
+weather:
+  ttl: 3600
+  api:
+    key:
+spotify:
+  ttl: 86400
+  api:
+    client:
+    key:

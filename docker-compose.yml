@@ -1,0 +1,16 @@
+version: '3'
+services:
+  redis:
+    image: redis
+    ports:
+      - "6379:6379"
+    networks:
+      - webnet
+  web:
+    image: weather-song
+    ports:
+      - "12001:12001"
+    networks:
+      - webnet
+networks:
+  webnet:
